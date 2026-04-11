@@ -37,6 +37,8 @@ export default function RootLayout() {
           options={{ presentation: "modal", headerShown: true, title: "Modal" }}
         />
 
+        <Stack.Screen name="event_info" />
+
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

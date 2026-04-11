@@ -16,7 +16,7 @@ export default function Header() {
 
       {/* Tap avatar → Student Profile */}
       <TouchableOpacity onPress={() => router.push("/student_profile")} activeOpacity={0.8}>
-        <ThemedView style={[styles.profile, { backgroundColor: colors.softGreenTheme }, Shadows.light]} />
+        <ThemedView style={[styles.profile, { backgroundColor: "transparent", borderColor: colors.primary }, Shadows.light]} />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => {}} activeOpacity={0.8}>
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: Radii.round,
+    borderWidth: 2,
   },
 
   badge: {
